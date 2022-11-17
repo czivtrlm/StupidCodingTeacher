@@ -20,7 +20,7 @@ match question:
 
 r = "def answer():\n"
 while True:
-    s = input()     # get the writen code
+    s = input()  # get the writen code
     if s.strip() == "end":
         break
     r += "\t" + s + "\n"
@@ -42,7 +42,7 @@ def input(*args, **kwargs):
 try:
     sys.stdout = result = io.StringIO()
     exec(r)
-    exec("answer()")   # run the program to identify if it's correct
+    exec("answer()")  # run the program to identify if it's correct
 
 
     def input(*args):
@@ -79,4 +79,4 @@ except Exception as e:
 #     if i != " ":
 #         b +=1
 # print(int(b))
-#############################
+############################
