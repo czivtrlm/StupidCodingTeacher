@@ -44,10 +44,8 @@ try:
     exec(r)
     exec("answer()")  # run the program to identify if it's correct
 
-
     def input(*args):
         return original_input(args)  # turn the input back to normal
-
 
     sys.stdout = stdout
     r = result.getvalue().strip()
